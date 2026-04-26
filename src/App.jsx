@@ -50,7 +50,7 @@ const GLOBAL_CSS = `
 const CO = {
   name:"Capitec Bank Holdings Limited", ticker:"CPI", exchange:"JSE",
   sector:"Retail Banking", country:"South Africa",
-  ceo:"Graham Lee", cfo:"André du Plessis",
+  ceo:"Graham Lee", cfo:"Grant Hardy",
   founded:"1 March 2001", fy:"28 February 2026",
   sharePrice:"R4,743.54", shareChg:"+54%",
   mktCap:"R550.7bn", pe:"~32x", nav:"R514.04",
