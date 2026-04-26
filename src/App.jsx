@@ -831,6 +831,25 @@ function StrategyTab({ t, mob, tab }) {
           );
         })}
       </div>
+
+      {/* ── ANALYST FOOTNOTE ── */}
+      <div style={{
+        background: t.surfaceAlt,
+        border: `1px solid ${t.border}`,
+        borderLeft: `3px solid ${t.textMuted}`,
+        borderRadius: 8,
+        padding: "10px 16px",
+        fontSize: 11,
+        color: t.textMuted,
+        lineHeight: 1.6,
+      }}>
+        <span style={{ fontWeight: 700, color: t.textSub }}>Analyst note · Strategy tab — </span>
+        Strategic lifecycle position is an analyst assessment of each pillar's maturity on a 0–100 scale
+        (0 = concept, 100 = fully embedded). Status labels reflect year-on-year trajectory relative to
+        management's stated direction. Neither metric is reported by Capitec.
+      </div>
+
+      {/* Moats + Management outlook */}
       <div style={{ ...cols("1fr","1fr 1fr","1fr 1fr"), gap:14 }}>
         <Card title="Competitive Moats" t={t}>
           {["Low-cost digital + branch distribution at scale","Brand trust & NPS leadership in SA retail banking","Proprietary risk models + data assets (25.8m clients)","Simplicity doctrine embedded in all product decisions","Scale in personal banking unmatched by any SA peer","Insurance own-licence economics — superior to cell captive","Network effects via Capitec Connect (MVNO) platform","AvaFin gives international optionality on the Capitec formula"].map((m,i)=>(
