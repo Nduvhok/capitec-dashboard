@@ -304,7 +304,7 @@ function OverviewTab({ t, mob, tab }) {
             </ComposedChart>
           </ResponsiveContainer>
         </Card>
-        <Card title="Active Client Base" subtitle="'000 clients — 5 year" t={t}>
+        <Card title="Active Client Base" subtitle="millions of clients — 5 year" t={t}>
           <ResponsiveContainer width="100%" height={mob?180:230}>
             <AreaChart data={OPS} margin={{ top:4,right:4,left:0,bottom:0 }}>
               <defs><linearGradient id="cg1" x1="0" y1="0" x2="0" y2="1"><stop offset="5%" stopColor={t.c4} stopOpacity={0.3}/><stop offset="95%" stopColor={t.c4} stopOpacity={0}/></linearGradient></defs>
@@ -682,7 +682,7 @@ function BusinessModelTab({ t, mob, tab }) {
           </div>
         </Card>
       </div>
-      <Card title="Client Base & Digital Adoption" subtitle="Active clients ('000) vs Banking App Clients" t={t}>
+      <Card title="Client Base & Digital Adoption" subtitle="Active clients (millions) vs Banking App Clients" t={t}>
         <ResponsiveContainer width="100%" height={mob?180:210}>
           <ComposedChart data={OPS} margin={{ top:4,right:4,left:0,bottom:0 }}>
             <CartesianGrid strokeDasharray="3 3" stroke={t.grid} />
