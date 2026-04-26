@@ -897,7 +897,7 @@ export default function App() {
             <div style={{ color:"#E1EAF6", fontWeight:700, fontSize:mob?12:14, overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap" }}>
               {mob ? "Capitec Bank" : "Capitec Bank Holdings Limited"}
             </div>
-            {!mob && <div style={{ color:"#3D5470", fontSize:11 }}>CPI · JSE · Retail Banking · FY2026</div>}
+            {!mob && <div style={{ color:"#3D5470", fontSize:11 }}>CPI · JSE · Retail Banking · FY2026 by Nduvho Kutama (MPhil Corp Strategy)</div>}
           </div>
         </div>
 
