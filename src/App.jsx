@@ -834,7 +834,7 @@ function StrategyTab({ t, mob, tab }) {
       {/* Strategy pillars */}
       <div style={{ ...cols("1fr","1fr 1fr","repeat(3,1fr)"), gap:12 }}>
         {STRAT.map((s,i) => {
-          ...
+          
         })}
       </div>
 
