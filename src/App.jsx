@@ -750,7 +750,7 @@ function SixCapitalsTab({ t, mob, tab }) {
             { who:"Clients",      icon:"👤", color:t.blue,   items:["CSAT score 85%","R98.3bn loans disbursed","R8.6bn interest paid","R5.7bn claims paid"] },
             { who:"Employees",    icon:"👩‍💼", color:t.green,  items:["R10.3bn remuneration","Leadership Academy","16 Internship placements","Transformation progress"] },
             { who:"Shareholders", icon:"📈", color:t.amber,  items:["R16.8bn headline earnings","7 980c DPS","ROE 31%","+54% share price"] },
-            { who:"Regulators",   icon:"🏛", color:t.c5,    items:["CAR 33%","SARB compliance","R5.3bn tax paid","Responsible lending"] },
+            { who:"Regulators",   icon:"🏛", color:t.c5,    items:["CAR 33%","SARB compliance","R8.2bn Income and other taxes","Responsible lending"] },
             { who:"Society",      icon:"🌍", color:"#06B6D4",items:["25.8m financially included","+100k clients/month","Youth employment","Economic inclusion"] },
           ].map((s,i)=>(
             <div key={i} style={{ padding:mob?"14px 14px":"18px 16px", borderRight:i<4?`1px solid ${t.border}`:"none", borderBottom:mob&&i>=2?`1px solid ${t.border}`:"none" }}>
