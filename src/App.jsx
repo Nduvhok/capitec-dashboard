@@ -123,18 +123,53 @@ const SIX_CAPS = [
     kpis:["Limited direct footprint","Net zero pathway committed","ESG performance improving","Sustainability focus"] },
 ];
 const STRAT = [
-  { name:"Client Obsession",       status:"On Track",  pct:80, icon:"🎯", metric:"+100k clients/month",
-    desc:"Digital-first client acquisition sustains base growth. App ecosystem deepens engagement and cross-sell." },
-  { name:"Digital Platform",       status:"Exceeding", pct:95, icon:"📱", metric:"15.3m app clients",
-    desc:"Banking app is the primary engagement layer, enabling monetisation via VAS, insurance and credit." },
-  { name:"VAS & Insurance",        status:"Exceeding", pct:92, icon:"🛡", metric:"+38% non-int. income",
-    desc:"Own-licence insurance improves economics. Capitec Connect (MVNO) scales rapidly from low base." },
-  { name:"Business Banking",       status:"Building",  pct:60, icon:"🏢", metric:"CLR 2.4%",
-    desc:"SME and merchant banking expanding with disciplined credit. Forex and rental finance diversifying offer." },
-  { name:"International – AvaFin", status:"Building",  pct:45, icon:"🌍", metric:"Consolidated May 2024",
-    desc:"AvaFin extends the Capitec formula to European/African emerging market fintech lending." },
-  { name:"Cost Leadership",        status:"On Track",  pct:75, icon:"⚙", metric:"CTI 39%",
-    desc:"Cost-to-income stable at 39% despite investment cycle, demonstrating strong operating leverage." },
+  { name:"Client Obsession",
+    status:"On Track",
+    lifecycle:"Established pillar — scaling phase",
+    pct:80,
+    icon:"🎯",
+    metric:"+100k clients/month",
+    desc:"7% client growth maintained with 100k+ new clients/month sustained. Consistent long-term trajectory anchored in Capitec's founding fundamentals and digital-first acquisition model." },
+
+  { name:"Digital Platform",
+    status:"Exceeding",
+    lifecycle:"Scaling ahead of expectations",
+    pct:95,
+    icon:"📱",
+    metric:"15.3m app clients",
+    desc:"App clients +19% vs. active client base +7% — digital adoption outpacing overall growth. 59% of active clients now on the banking app; digital and VAS transaction volumes up 26%." },
+
+  { name:"VAS & Insurance",
+    status:"Exceeding",
+    lifecycle:"Scaling ahead of expectations",
+    pct:92,
+    icon:"🛡",
+    metric:"+38% non-int. income",
+    desc:"Three simultaneous beats: Connect +129% to R442m, VAS +34% to R5.65bn, Credit Life fully transferred to own Capitec Life licence from September 2025. Own-licence transition materially improves unit economics." },
+
+  { name:"Business Banking",
+    status:"Building",
+    lifecycle:"Early-to-mid scale phase",
+    pct:60,
+    icon:"🏢",
+    metric:"CLR 2.4%",
+    desc:"Entrepreneur Account launched December 2025 targeting sole proprietors and informal SMEs. Management explicitly frames FY2027 as 'continuing to build the business bank of choice for SMEs'." },
+
+  { name:"International – AvaFin",
+    status:"Building",
+    lifecycle:"Integration and early scale phase",
+    pct:45,
+    icon:"🌍",
+    metric:"Consolidated May 2024",
+    desc:"~21 months post-acquisition. CLR at 53.2% signals credit book still normalising. Too early to assess structural performance — integration and early scale phase by management's own framing." },
+
+  { name:"Cost Leadership",
+    status:"On Track",
+    lifecycle:"Embedded discipline — investment phase",
+    pct:75,
+    icon:"⚙",
+    metric:"CTI 39%",
+    desc:"CTI held at 39% despite 12% opex growth and full-year AvaFin consolidation. Management: 'Cost discipline gives us the capacity to invest from strength, not under duress.'" },
 ];
 
 /* ──────────────────────────────────────────────────────────────────────
@@ -791,7 +826,7 @@ function StrategyTab({ t, mob, tab }) {
               <div style={{ background:t.border,borderRadius:4,height:5,overflow:"hidden" }}>
                 <div style={{ width:`${s.pct}%`,height:"100%",background:`linear-gradient(90deg,${sc}88,${sc})`,borderRadius:4 }} />
               </div>
-              <div style={{ fontSize:10,color:t.textMuted,marginTop:4,textAlign:"right" }}>{s.pct}% execution maturity</div>
+              <div style={{ fontSize:10,color:t.textMuted,marginTop:4,textAlign:"right" }}>{s.lifecycle}% execution maturity</div>
             </div>
           );
         })}
