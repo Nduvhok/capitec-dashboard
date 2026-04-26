@@ -826,7 +826,7 @@ function StrategyTab({ t, mob, tab }) {
               <div style={{ background:t.border,borderRadius:4,height:5,overflow:"hidden" }}>
                 <div style={{ width:`${s.pct}%`,height:"100%",background:`linear-gradient(90deg,${sc}88,${sc})`,borderRadius:4 }} />
               </div>
-              <div style={{ fontSize:10,color:t.textMuted,marginTop:4,textAlign:"right" }}>{s.lifecycle}% execution maturity</div>
+              <div style={{ fontSize:10,color:t.textMuted,marginTop:4,textAlign:"right" }}>{s.lifecycle}</div>
             </div>
           );
         })}
