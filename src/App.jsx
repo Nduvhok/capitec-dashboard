@@ -708,7 +708,7 @@ function SixCapitalsTab({ t, mob, tab }) {
     <div className="fade-in" style={{ display:"flex", flexDirection:"column", gap:16 }}>
       <SectionHero title="Six Capitals — Value Creation Model" subtitle="Capitec's 6 capitals interact dynamically to support performance, innovation, stakeholder trust and long-term sustainability." t={t} mob={mob} />
       <div style={{ ...cols("1fr","1fr","1fr 2fr"), gap:16 }}>
-        <Card title="Six Capitals Scorecard" subtitle="Editorial strength: 0–100" t={t}>
+        <Card title="Six Capitals Scorecard" subtitle="Analyst Qualitative Assessment: 0–100" t={t}>
           <ResponsiveContainer width="100%" height={mob?250:310}>
             <RadarChart data={radarData} margin={{ top:15,right:mob?8:20,left:mob?8:20,bottom:15 }}>
               <PolarGrid stroke={t.grid} />
