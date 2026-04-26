@@ -81,11 +81,11 @@ const INS = [
   { yr:"FY26", creditLife:2430, funeral:2794 },
 ];
 const BS = [
-  { yr:"FY22", assets:177943, loans:66549,  cash:99460,  other:11934, deps:134458, equity:35715, car:36, nav:30888 },
-  { yr:"FY23", assets:190636, loans:78168,  cash:98969,  other:13499, deps:146498, equity:37871, car:34, nav:32753 },
-  { yr:"FY24", assets:207579, loans:80552,  cash:111312, other:15715, deps:156015, equity:43488, car:36, nav:37611 },
-  { yr:"FY25", assets:238464, loans:89145,  cash:127796, other:21523, deps:175541, equity:50841, car:38, nav:43970 },
-  { yr:"FY26", assets:263284, loans:103760, cash:138596, other:20928, deps:190575, equity:59437, car:33, nav:51404 },
+  { yr:"FY22", assets:177943, loans:66549,  cash:99460,  other:11934, deps:134458, equity:35715, car:36, nav:30888, totalLiab:142178 },
+  { yr:"FY23", assets:190636, loans:78168,  cash:98969,  other:13499, deps:146498, equity:37871, car:34, nav:32753, totalLiab:152716 },
+  { yr:"FY24", assets:207579, loans:80552,  cash:111312, other:15715, deps:156015, equity:43488, car:36, nav:37611, totalLiab:164048 },
+  { yr:"FY25", assets:238464, loans:89145,  cash:127796, other:21523, deps:175541, equity:50841, car:38, nav:43970, totalLiab:187550 },
+  { yr:"FY26", assets:263284, loans:103760, cash:138596, other:20928, deps:190575, equity:59437, car:33, nav:51404, totalLiab:203771 },
 ];
 const OPS = [
   { yr:"FY22", clients:18104, emp:14758, branches:853, txns:5508,  appC:null,  capex:863  },
@@ -592,7 +592,7 @@ function BalanceSheetTab({ t, mob, tab }) {
                 ["Total Assets",          BS.map(b=>b.assets),         false],
                 ["  Loans & Advances",    BS.map(b=>b.loans),          false],
                 ["  Cash & Investments",  BS.map(b=>b.cash),           false],
-                ["Total Liabilities",     BS.map(b=>b.assets-b.equity),false],
+                ["Total Liabilities",     BS.map(b=>b.totalLiab),false],
                 ["  Deposits",            BS.map(b=>b.deps),           false],
                 ["Shareholders' Equity",  BS.map(b=>b.equity),         true ],
                 ["CAR %",                 BS.map(b=>b.car),            false,"%"],
