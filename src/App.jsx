@@ -52,7 +52,7 @@ const CO = {
   sector:"Retail Banking", country:"South Africa",
   ceo:"Graham Lee", cfo:"André du Plessis",
   founded:"1 March 2001", fy:"28 February 2026",
-  sharePrice:"R474.35", shareChg:"+54%",
+  sharePrice:"R4,743.54", shareChg:"+54%",
   mktCap:"R550.7bn", pe:"~32x", nav:"R514.04",
   purpose:"To make a meaningful difference in people's lives by empowering them to grow.",
   highlights:[
@@ -904,7 +904,7 @@ export default function App() {
         {/* Right: price + market stats (collapsed on mobile) + theme toggle */}
         <div style={{ display:"flex", alignItems:"center", gap:mob?10:20, flexShrink:0 }}>
           <div style={{ textAlign:"right" }}>
-            <div style={{ color:"#10B981", fontWeight:800, fontSize:mob?13:16, fontFamily:"monospace" }}>R474.35</div>
+            <div style={{ color:"#10B981", fontWeight:800, fontSize:mob?13:16, fontFamily:"monospace" }}>R4,743.54</div>
             <div style={{ color:"#10B981", fontSize:9, fontWeight:600 }}>+54% YTD</div>
           </div>
           {!mob && (
