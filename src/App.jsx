@@ -843,7 +843,7 @@ function StrategyTab({ t, mob, tab }) {
         color: t.textMuted,
         lineHeight: 1.6,
       }}>
-        <span style={{ fontWeight: 700, color: t.textSub }}>Analyst note · Strategy tab — </span>
+        <span style={{ fontWeight: 700, color: t.textSub }}>Analyst note  — </span>
         Strategic lifecycle position is an analyst assessment of each pillar's maturity on a 0–100 scale
         (0 = concept, 100 = fully embedded). Status labels reflect year-on-year trajectory relative to
         management's stated direction. Neither metric is reported by Capitec.
